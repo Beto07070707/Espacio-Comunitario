@@ -1,0 +1,259 @@
+        :root {
+            --color-primario: #df55f2;
+            --color-secundario: #3498db;
+            --color-fondo: #f4f7f6;
+            --color-texto: #333333;
+            --color-blanco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth; /* Navegación suave entre secciones */
+        }
+        body {
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            line-height: 1.6;
+        }
+
+        /* --- 2. MENÚ PRINCIPAL --- */
+        nav {
+            background-color: var(--color-primario);
+            position: fixed; /* Menú siempre visible */
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            color: var(--color-blanco);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu li a {
+            color: var(--color-blanco);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .menu li a:hover {
+            color: var(--color-secundario); 
+        }
+
+
+        .banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.153), rgba(0, 0, 0, 0.115)), url('../img/02.jpg') center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 0 20px;
+            margin-top: 60px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: var(--color-secundario);
+            color: var(--color-blanco);
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        /* 4. Efectos visuales */
+        .btn:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* --- SECCIONES GENERALES --- */
+        section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .titulo-seccion {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--color-primario);
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--color-secundario);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .centrar-titulo {
+            text-align: center;
+        }
+
+        /* --- ACERCA DE MÍ --- */
+        .sobre-mi-contenido {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .sobre-mi-texto {
+            flex: 1;
+        }
+
+        .sobre-mi-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .sobre-mi-img img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* --- 8. GALERÍA DE IMÁGENES INTERACTIVA --- */
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .galeria-item {
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease; /* Efecto visual interactivo */
+        }
+
+        .galeria-item img:hover {
+            transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+            cursor: pointer;
+        }
+
+        /* --- 7. VIDEOS --- */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporción 16:9 para que sea responsivo */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* --- FORMULARIO DE CONTACTO --- */
+        .formulario {
+            background-color: var(--color-blanco);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .grupo-form {
+            margin-bottom: 15px;
+        }
+
+        .grupo-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .grupo-form input,
+        .grupo-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .btn-submit {
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+        }
+
+        /* --- PIE DE PÁGINA --- */
+        footer {
+            background-color: var(--color-primario);
+            color: var(--color-blanco);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* --- 3. DISEÑO RESPONSIVO (Ajuste para móviles) --- */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+            .menu {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .sobre-mi-contenido {
+                flex-direction: column;
+                text-align: center;
+            }
+            .banner h1 {
+                font-size: 2rem;
+            }
+        }

@@ -1,0 +1,49 @@
+#header{
+	margin: auto;
+	width: 1000px;
+	font-family: century gothic ;
+}
+
+ul, ol{
+	list-style: none;
+}
+
+.nav li a{
+	background-color: #CD55FA;
+	color: #fff;
+	text-decoration:none ;
+	padding: 10px 15px;
+	display: block;
+}
+
+.nav li a:hover{
+	background-color: #E7ABF7;
+}
+
+.nav > li {
+	float: center;
+}
+
+.nav li ul{
+	display:none;
+	position: absolute;
+	min-width: 300px;
+}
+
+.nav li:hover > ul{
+	display: block;
+}
+
+.nav li ul li{
+	position: column;
+}
+
+.nav li ul li ul{
+	right: -140px;
+	top: 0px;
+}
+.nav{
+	font-family: Century Gothic;
+	
+}
+

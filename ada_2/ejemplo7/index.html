@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Estilo responsivo</title>
+	<div c></div>
+</head>
+<body>
+   <header>
+	<h1>Mi pagina responsiva</h1>
+	<div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+<nav id="navMenu">
+<ul>
+<li><a href="#">Inicio</a></li>
+<li><a href="#">Acerca de</a></li>
+<li><a href="#">Servicios</a></li>
+<li><a href="#">Contacto</a></li>
+</ul>
+</nav>
+</header>
+     <div class="container">
+ 	    <div class="main-content">
+ 	    	<h2>Contenido principal</h2>
+ 	    	<p>hola como anda la raza pepona aqui pasandola bien y haciendo el texto bien aca super jelou</p>
+ 	    </div>
+            <div class="sidebar">
+            	<h2>Contenido lateral</h2>
+                 <p>hola como anda la raza pepona aqui pasandola bien y haciendo el texto bien aca super jelou</p>
+            </div>
+     </div>
+   <footer>
+   	<p>Derechos de autor &copy; 2026 - Contreras Gamboa Roberto </p>
+   </footer>
+<script>
+function toggleMenu(){
+	const navMenu=document.getElementById("navMenu");
+navMenu.classList.toggle("responsive");
+}
+</script>
+
+</body>
+</html>

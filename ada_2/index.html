@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>|Sitio personal|</title>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="#inicio" class="logo">Aqui me encuentro yo</a>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre mi/index.html">Sobre mí</a></li>
+                <li><a href="proyectos/index.html">Proyectos</a></li>
+                <li><a href="galeria/index.html">Galería</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="inicio" class="banner">
+        <div class="banner-contenido">
+            <h1>Mi nombre es Roberto</h1>
+            <p>Estudiante de el desarrollo web</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <div class="centrar-titulo">
+                <h2 class="titulo-seccion">Este soy yo</h2>
+            </div>
+            <div class="sobre-mi-contenido">
+                <div class="sobre-mi-img">
+                    <img src="img/01.png" alt="Mi foto de perfil">
+                </div>
+                <div class="sobre-mi-texto">
+                    <h3>Hola este soy yo, lamentablemente no encontré mejor foto</h3>
+                    <p>Soy un estudiante del colegio de bachilleres de Yucatán,
+                    Cobay ahí mismo, estudio la capacitación de tics y mis especialidades son de física y matemáticas,
+                     realmente no soy el mejor en lo que hago pero lo intento y me gusta intentarlo,
+                      me encánta el diseño virtual y me apasionan mucho las tics.</p>
+                    <br>
+                    <p>Ojalá algún día pueda ser un ingeniero en software al que le vaya muy bien,
+                    desde pequeño siempre eh soñado con poder llegar a un lugar inalcanzable y felíz,
+                     me siento muy motivado a seguir, estudiar y dar todo de mí por que todas las cosas me salgan como espero.</p>
+                <br><br>
+                    <a href="proyectos/proyectos.html" class="btn">Ver mis proyectos</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="sobre-mi">
+                <h1 class="titulo-seccion"></h1>
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="centrar-titulo">
+                <h2 class="titulo-seccion">Contáctame</h2>
+            </div>
+            
+            <div class="formulario">
+                <form action="#" method="POST">
+                    <div class="grupo-form">
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="grupo-form">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    </div>
+                    <div class="grupo-form">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Derechos Reservados Contreras Gamboa Roberto- COBAY.</p>
+    </footer>
+
+</body>
+</html>
