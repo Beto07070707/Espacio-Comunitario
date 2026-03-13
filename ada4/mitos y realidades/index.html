@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educación Sexual - Métodos Anticonceptivos</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+     <link rel="icon" type="image/png" href="/img/imagen (1).png">
+    <meta name="description" content="Sitio web educativo sobre métodos anticonceptivos, planificación familiar y salud sexual responsable.">
+<meta name="keywords" content="anticonceptivos, salud sexual, condón, DIU, educación sexual, prevención">
+</head>
+<body>
+ <header>
+        <nav class="navbar">
+            <div class="hamburguesa" id="btn-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="menu-principal" id="menu-principal">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/por que importa/index.html">Por qué importa</a></li>
+                <li><a href="/tipos de metodos/index.html">Tipos de Métodos</a></li>
+                <li><a href="/mitos y realidades/index.html">Mitos y Realidades</a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="slider-contenedor">
+        <img class="banner banner1" src="/img/01slide.jpg" alt="Educación sexual integral">
+        <img class="banner banner2" src="/img/02slide.jpg" alt="Métodos anticonceptivos seguros">
+        <img class="banner banner3" src="/img/03slide.jpg" alt="Planificación familiar">
+        <img class="banner banner4" src="/img/04slide.jpg" alt="Salud y bienestar juvenil">
+        
+        <div class="texto-slider">
+             <h2>Crees saber lo suficiente?</h2>
+        </div>
+    </div>
+    <section class="seccion-videos">
+        <h2 class="titulo-mitos">Infórmate con Expertos</h2>
+        <p>Aprende cómo funcionan realmente los métodos con este video explicativo.</p>
+        
+        <div class="video-responsive">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7XjF3x-RXXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="seccion-quiz">
+        <h2 class="titulo-mitos">¿Mito o Realidad? ¡Pon a prueba tu conocimiento!</h2>
+        
+        <div id="contenedor-preguntas">
+            
+            <div class="pregunta-tarjeta">
+                <h3>1. Usar dos condones al mismo tiempo te da el doble de protección.</h3>
+                <div class="opciones-quiz">
+                    <button class="btn-quiz" onclick="responderQuiz(this, false, 'La fricción entre dos condones hace que sea mucho más probable que se rompan. Siempre usa solo uno.')">Verdadero</button>
+                    <button class="btn-quiz" onclick="responderQuiz(this, true, 'La fricción entre dos condones hace que sea mucho más probable que se rompan. Siempre usa solo uno.')">Falso</button>
+                </div>
+                <p class="mensaje-quiz" style="display: none;"></p>
+            </div>
+
+            <div class="pregunta-tarjeta">
+                <h3>2. El DIU (Dispositivo Intrauterino) es solo para mujeres que ya tuvieron hijos.</h3>
+                <div class="opciones-quiz">
+                    <button class="btn-quiz" onclick="responderQuiz(this, false, 'Cualquier mujer, sin importar si ha tenido embarazos o no, puede usar un DIU de forma segura.')">Verdadero</button>
+                    <button class="btn-quiz" onclick="responderQuiz(this, true, 'Cualquier mujer, sin importar si ha tenido embarazos o no, puede usar un DIU de forma segura.')">Falso</button>
+                </div>
+                <p class="mensaje-quiz" style="display: none;"></p>
+            </div>
+
+            <div class="pregunta-tarjeta">
+                <h3>3. El condón es el único método que previene Infecciones de Transmisión Sexual (ITS).</h3>
+                <div class="opciones-quiz">
+                    <button class="btn-quiz" onclick="responderQuiz(this, true, '¡Exacto! Las pastillas, implantes y parches previenen embarazos, pero SOLO el condón bloquea las ITS.')">Verdadero</button>
+                    <button class="btn-quiz" onclick="responderQuiz(this, false, '¡Exacto! Las pastillas, implantes y parches previenen embarazos, pero SOLO el condón bloquea las ITS.')">Falso</button>
+                </div>
+                <p class="mensaje-quiz" style="display: none;"></p>
+            </div>
+
+        </div>
+    </section>
+    <section id="inicio" class="hero">
+        <h1>Tu Vida, Tu Decisión</h1>
+        <p>Información clara, segura y sin prejuicios sobre métodos anticonceptivos.</p>
+        <a href="/tipos de metodos/index.html" class="btn-accion">Conoce tus opciones</a>
+    </section>
+
+    <script src="../js/java.js"></script>
+</body>
+</html>
